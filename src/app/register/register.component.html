@@ -1,0 +1,37 @@
+<div class="container">
+    <form action="" [formGroup]='RegisterForm' (ngSubmit)='formData()'>
+    <div class="Register-form">
+        <h1>Register</h1>
+        <div class="form-group">
+            <input type="text" placeholder="Enter first name" class="form-control" formControlName='firstname'>
+        </div>
+          <div class="message-box" *ngIf='Firstname.errors'>
+            <div *ngIf='Firstname.errors.required'>First name is required</div>
+            <div *ngIf="Firstname.errors.minlength">min length should be is 4</div>
+          </div>  
+        
+        <div class="form-group">
+            <input type="text" placeholder="Enter last name" class="form-control" formControlName='lastname'>
+        </div>
+       
+        <div class="form-group">
+            <input type="email" placeholder="Enter email id" class="form-control" formControlName='email'>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Enter password" class="form-control" formControlName='password'>
+        </div>
+        
+        <br>
+       <div class="row">
+           <div class="col">
+            <button class="btn btn-primary ml-3" [disabled]='RegisterForm.invalid'>Register</button>
+           </div>
+           <div class="col">
+               <span>Already user ? </span>
+            <button class="btn btn-primary" type="submit" [routerLink]="['/signin']">Login</button>
+           </div>
+       </div>
+        
+    </div>
+</form>
+</div>

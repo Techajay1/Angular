@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "username": "anil",
+      "email": "anil@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "ajay123",
+      "email": "ajay@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "firstname": "ajay",
+      "lastname": "yadav",
+      "username": "ajay123",
+      "email": "ajay@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

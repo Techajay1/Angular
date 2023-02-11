@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+}
+.Register-form .input-group{
+    margin-top: 20px;
+}
+.Register-form{
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    border: 1px solid rgb(115, 255, 0);
+    border-radius: 15px;
+}
+h1{
+  text-align: center;
+  font-size: 38px;
+  font-family: verdana;
+}
+.form-control.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+.form-control.ng-valid{
+    border: 2px solid green;
+}
+.msg-box{
+    color: red;
+}
